@@ -1,5 +1,6 @@
 import Header from "../comp/header";
 import Footer from "../comp/footer";
+import MainContent from"../comp/MainContent"
 
 
 
@@ -11,9 +12,7 @@ const Html = () => {
 
 
 
-    <main>
-      HTML Page
-    </main>
+  <MainContent PageName="HTML" />
 <Footer/>
   </>
   );

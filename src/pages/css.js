@@ -1,24 +1,16 @@
 import Header from "../comp/header";
 import Footer from "../comp/footer";
-
-
-
-
+import MainContent from"../comp/MainContent"
 
 const Css = () => {
   return (
     <>
+      <Header />
 
-    <Header/>
-
-
-
-    <main>
-      CSS Page
-    </main>
-<Footer/>
-  </>
+      <MainContent PageName="Css" />
+      <Footer />
+    </>
   );
-}
+};
 
 export default Css;
