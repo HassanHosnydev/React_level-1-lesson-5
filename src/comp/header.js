@@ -1,67 +1,69 @@
-
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
       <header className="hide-when-mobile">
-      <h1>c4a.dev</h1>
-      <ul className="flex">
-        <li className="main-list">
-          <a className="main-link" href="/html">
-            HTML
-          </a>
-          <ul className="sub-ul">
-            <li>
-              <a href="">Full Course</a>
-            </li>
-            <li>
-              <a href="">Crash Course</a>
-            </li>
-            <li>
-              <a href="">learn in 1h</a>
-            </li>
-          </ul>
-        </li>
-        <li className="main-list">
-          <a className="main-link" href="/css">
-            CSS
-          </a>
-          <ul className="sub-ul">
-            <li>
-              <a href="">Full Course</a>
-            </li>
-            <li>
-              <a href="">CSS Examples</a>
-            </li>
-            <li className="mini-projects">
-              <a href="">mini projects&nbsp; + </a>
-              <ul className="sub-sub-ul">
-                <li>
-                  <a href="">project 1</a>
-                </li>
-                <li>
-                  <a href="">project 2</a>
-                </li>
-                <li>
-                  <a href="">project 3</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li className="main-list">
-          <a className="main-link" href="/javascript">
-            JavaScript
-          </a>
-          <ul className="sub-ul sub-of-js">
-            <li>
-              <a href="">coming soon🔥</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </header>
-    <header style={{ backgroundColor: "red" }} className="show-when-mobile">
+        <h1>
+          <Link to="/">c4a.dev</Link>
+        </h1>
+        <ul className="flex">
+          <li className="main-list">
+            <NavLink className="main-NavLink" to="/html">
+              HTML
+            </NavLink>
+            <ul className="sub-ul">
+              <li>
+                <a href="">Full Course</a>
+              </li>
+              <li>
+                <a href="">Crash Course</a>
+              </li>
+              <li>
+                <a href="">learn in 1h</a>
+              </li>
+            </ul>
+          </li>
+          <li className="main-list">
+            <NavLink className="main-NavLink" to="/css">
+              CSS
+            </NavLink>
+            <ul className="sub-ul">
+              <li>
+                <a href="">Full Course</a>
+              </li>
+              <li>
+                <a href="">CSS Examples</a>
+              </li>
+              <li className="mini-projects">
+                <a href="">mini projects&nbsp; + </a>
+                <ul className="sub-sub-ul">
+                  <li>
+                    <a href="">project 1</a>
+                  </li>
+                  <li>
+                    <a href="">project 2</a>
+                  </li>
+                  <li>
+                    <a href="">project 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li className="main-list">
+            <NavLink className="main-NavLink" to="/javascript">
+              JavaScript
+            </NavLink>
+            <ul className="sub-ul sub-of-js">
+              <li>
+                <a href="">coming soon🔥</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <header style={{ backgroundColor: "red" }} className="show-when-mobile">
         <h1>c4a.dev **</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
@@ -131,6 +133,6 @@ const Header = () => {
       </header>
     </div>
   );
-}
+};
 
 export default Header;

@@ -177,3 +177,7 @@ footer{
 .show-when-mobile {
   display: none;
 }
+
+.main-NavLink.active{
+  color: aqua;
+}
